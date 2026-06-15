@@ -37,9 +37,9 @@ using Valve.VR.InteractionSystem;
 using static Unity.Burst.Intrinsics.X86;
 using Random = UnityEngine.Random;
 
-namespace templatemod
+namespace Templatemod
 {
-    [BepInPlugin("com.dev.templatemod", "templatemod", "1.0.0")]
+    [BepInPlugin("com.Dev.TemplateMod", "TemplateMod", "1.0.0")]
     public class Mod : BaseUnityPlugin
     {
         private void Start()
