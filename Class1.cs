@@ -35,7 +35,7 @@ using GorillaNetworking;
 using GorillaTag.Rendering;
 using Valve.VR.InteractionSystem;
 using static Unity.Burst.Intrinsics.X86;
-using Random = System.Random;
+using Random = UnityEngine.Random;
 
 
 
