@@ -37,24 +37,23 @@ using Valve.VR.InteractionSystem;
 using static Unity.Burst.Intrinsics.X86;
 using Random = UnityEngine.Random;
 
-
-
-
-namespace ModTemp
+namespace templatemod
 {
-    [BepInPlugin("com.idk.tuffblud", "thingy", "1.0.0")]
+    [BepInPlugin("com.dev.templatemod", "templatemod", "1.0.0")]
     public class Mod : BaseUnityPlugin
     {
         private void Start()
         {
 
         }
-
-        GTPlayer player => GTPlayer.Instance;
-        Rigidbody rba => player.bodyCollider.attachedRigidbody;
-        private Rigidbody rb => player.GetComponent<Rigidbody>();
-
-        void Update()
+        
+        GTPlayer player = GTPlayer.Instance;
+        
+        Rigidbody rba = player.bodyCollider.attachedRigidbody;
+        
+        private Rigidbody rb = player.GetComponent<Rigidbody>();
+        
+        private void Update()
         {
 
         }
@@ -62,7 +61,6 @@ namespace ModTemp
 
         private void OnGUI()
         {
-
 
         }
     }
