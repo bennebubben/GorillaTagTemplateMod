@@ -50,14 +50,13 @@ namespace Templatemod
         GTPlayer player = GTPlayer.Instance;
         
         Rigidbody rba = player.bodyCollider.attachedRigidbody;
-        
-        private Rigidbody rb = player.GetComponent<Rigidbody>();
+
+        Rigidbody rb = player.GetComponent<Rigidbody>();
         
         private void Update()
         {
 
         }
-
 
         private void OnGUI()
         {
