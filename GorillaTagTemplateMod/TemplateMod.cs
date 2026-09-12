@@ -62,10 +62,25 @@ namespace Templatemod
         {
             get { return player.bodyCollider; }
         }
+        private Rigidbody rb
+        {
+            get { return player.GetComponent<Rigidbody>(); }
+        }
+        private GTPlayer.HandState lefthand
+        {
+            get { return player.LeftHand; }
+        }
+        private GTPlayer.HandState righthand
+        {
+            get { return player.RightHand; }
+        }
         private void Update()
         {
         if (GTPlayer.Instance == null) return;
         if (GorillaTagger.Instance == null) return;
+
+
+        
         }
         private void OnGUI()
         {
