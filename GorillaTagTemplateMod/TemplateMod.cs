@@ -45,9 +45,9 @@ namespace Templatemod
         private void Start()
         {
             GTPlayer player = GTPlayer.Instance;
-        
-            Rigidbody rba = player.bodyCollider.attachedRigidbody;
-
+            GTPlayer.HandState lefthand = player.LeftHand;
+            GTPlayer.HandState righthand = player.RightHand;
+            Rigidbody arb = player.bodyCollider.attachedRigidbody;
             Rigidbody rb = player.GetComponent<Rigidbody>();
         }
         private void Update()
