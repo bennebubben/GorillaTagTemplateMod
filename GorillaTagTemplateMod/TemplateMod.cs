@@ -42,19 +42,31 @@ namespace Templatemod
     [BepInPlugin("com.Dev.TemplateMod", "TemplateMod", "1.0.0")]
     public class Mod : BaseUnityPlugin
     {
-        private void Start()
+        private GTPlayer player
         {
-            GTPlayer player = GTPlayer.Instance;
-            GTPlayer.HandState lefthand = player.LeftHand;
-            GTPlayer.HandState righthand = player.RightHand;
-            Rigidbody arb = player.bodyCollider.attachedRigidbody;
-            Rigidbody rb = player.GetComponent<Rigidbody>();
+            get { return GTPlayer.Instance; }
+        }
+        private GorillaTagger gorillatagger
+        {
+            get { return GorillaTagger.Instance; }
+        }
+        private Rigidbody arb
+        {
+            get { return player.bodyCollider.attachedRigidbody; }
+        }
+        private SphereCollider head
+        {
+            get { return player.headCollider; }
+        }
+        private CapsuleCollider body
+        {
+            get { return player.bodyCollider; }
         }
         private void Update()
         {
-
+        if (GTPlayer.Instance == null) return;
+        if (GorillaTagger.Instance == null) return;
         }
-
         private void OnGUI()
         {
 
